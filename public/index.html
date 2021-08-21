@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAHUOcjhzqd3UW1i2cyHDjuFIxAFhSA7vY",
+          authDomain: "quiz-app-7004f.firebaseapp.com",
+          projectId: "quiz-app-7004f",
+          storageBucket: "quiz-app-7004f.appspot.com",
+          messagingSenderId: "604095603264",
+          appId: "1:604095603264:web:92458badd8809effa275a5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+</head>
+
+<body>
+
+    
+<div class="wrapper">
+    <div class="welcome-text">
+            <form class="welcome-form" name="welcome-form" onsubmit="formSubmit(event)">
+                <input type="text" name="username" id="input-user-name" >
+                <button type="submit" onclick="checkUserName()">Start Quiz</button>
+            </form>
+    </div>
+ </div>
+
+               
+            
+            
+        </div>
+    </div>
+
+
+   
+    <script src="app2.js"></script>
+</body>
+
+</html>

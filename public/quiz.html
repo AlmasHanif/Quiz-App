@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAHUOcjhzqd3UW1i2cyHDjuFIxAFhSA7vY",
+          authDomain: "quiz-app-7004f.firebaseapp.com",
+          projectId: "quiz-app-7004f",
+          storageBucket: "quiz-app-7004f.appspot.com",
+          messagingSenderId: "604095603264",
+          appId: "1:604095603264:web:92458badd8809effa275a5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="quiz">
+            <div class="quiz_header">
+                <div class="quiz_user">
+                    <h4>Welcome | <span id="user-name"></span></h4>
+                </div>
+                <div class="quiz_timer">
+                    <span class="timer">00:00</span>
+                </div>
+            </div>
+            <div class="quiz_body">
+               <div id="questions">
+               <!-- <h2>What is the current Prime Minister of Pakistan?</h2>
+               <ul class="option-group">
+                   <li class="option">Imran Khan</li>
+                   <li class="option">Arif Alvi</li>
+                   <li class="option">Qamar Javed</li>
+                   <li class="option">Asim Ghafoor</li>
+               </ul> -->
+             </div>
+              <button class="btn-next" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+ 
+     </div>
+      
+    <script src="app2.js"></script>
+    <script src="user-content.js"></script>
+    <script src="timer.js"></script>
+</body>
+
+</html>
